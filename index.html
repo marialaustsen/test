@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test</title>
+<link href="test.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="bootstrap.min.css">
+<!--BEST PRACTICE TO USE MINIFIED SCRIPT LIBRARIES!! REDUCE PAGE SPEED-->
+<script src="test.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("sectionhide").toggle(1000);
+    });
+});
+</script>
+
+</head>
+
+<body>
+<div id="mainwrapper">
+  
+   <header> 
+    <div id="logo">Valtech</div>
+    <nav>
+   
+    <a href="#" title="Link">Home</a> 
+    <a href="about.html" title="Link">About</a>
+    <a href="blog.html" title="Link">Blog</a>
+    <button id="button">Sidebar</button>
+     
+    </nav>
+    
+  </header>
+
+  <div id="content">
+    <div class="notOnDesktop"> 
+      <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
+      <input type="text" placeholder="Search">
+    </div>
+    <section id="mainContent"> 
+      <!--************************************************************************
+    Main Blog content starts here
+    ****************************************************************************-->
+     
+      <h3>Valtech, where experiences are engineered</h3>
+        <ul>
+         <div class="box col-xs-12 col-sm-4">
+          <li><a href="#" title="Link"><img src="images/1.jpg" data-tilt alt=""/></a></li>
+            <h3><a href="#">Skills Funding Agency</a></h3>
+				<p>Helping apprentices on their career paths</p>
+		 </div>
+         <div class="box col-xs-12 col-sm-4">
+          <li><a href="#" title="Link"><img src="images/2.jpg" data-tilt alt=""/></a></li>
+            <h3><a href="#">Skills Funding Agency</a></h3>
+				<p>Helping apprentices on their career paths</p>
+		 </div> 
+        <div class="clearfix visible-xs-block"></div>
+         <div class="box col-xs-12 col-sm-4">
+          <li><a href="#" title="Link"><img src="images/3.jpg" data-tilt alt=""/></a></li>
+            <h3><a href="#">Skills Funding Agency</a></h3>
+				<p>Helping apprentices on their career paths</p>
+		 </div> 
+        <div class="clearfix visible-sm-block"></div>
+<div class="clearfix visible-md-block"></div>
+<div class="clearfix visible-lg-block"></div>
+         <div class="box col-xs-12 col-sm-4">
+          <li><a href="#" title="Link"><img src="images/4.jpg" data-tilt alt=""/></a></li>
+            <h3><a href="#">Skills Funding Agency</a></h3>
+				<p>Helping apprentices on their career paths</p>
+		 </div> 
+         <div class="box col-xs-12 col-sm-4">
+          <li><a href="#" title="Link"><img src="images/5.jpg" data-tilt alt=""/></a></li>
+            <h3><a href="#">Skills Funding Agency</a></h3>
+				<p>Helping apprentices on their career paths</p>
+		 </div> 
+         <div class="box col-xs-12 col-sm-4">
+          <li><a href="#" title="Link"><img src="images/6.jpg" data-tilt alt=""/></a></li>
+            <h3><a href="#">Skills Funding Agency</a></h3>
+				<p>Helping apprentices on their career paths</p>
+		 </div>
+        </ul> 
+    </section>
+    <sectionhide id="sidebar"> 
+      <!--************************************************************************
+    Sidebar starts here. It contains a searchbox and 6 links
+    ****************************************************************************-->
+      <input type="text" placeholder="Search">
+      
+      <nav>
+       <ul class="list-inline">
+  <li class="list-inline-item"><a href="#" title="Link">Link1</a></li>
+  <li class="list-inline-item"><a href="#" title="Link">Link2</a></li>
+  <li class="list-inline-item"><a href="#" title="Link">Link1</a></li>
+		</ul>
+      <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 	
+      </p>
+      </nav>
+    </sectionhide>
+    
+    <footer> 
+      <!--************************************************************************
+    Footer starts here
+    ****************************************************************************-->
+      <article>
+        <h3>Footer1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        <cite title="Source Title">Source Title</cite>
+      </article>
+      
+      <article>
+        <h3>Footer2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        <cite title="Source Title">Source Title</cite>
+      </article>
+      
+    </footer>
+  </div>
+  <div id="footerbar"><!-- Small footerbar at the bottom --></div>
+</div>
+<script src="https://unpkg.com/tilt.js@1.1.20/dest/tilt.jquery.min.js"></script>
+</body>
+</html>
